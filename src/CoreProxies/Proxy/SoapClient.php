@@ -12,7 +12,7 @@ class SoapClient extends \SoapClient
      *
      * @return \CoreProxies\Proxy\SoapClient
      */
-    public function __construct($wsdl, array $options = null)
+    public function __construct($wsdl, array $options = array())
     {
         parent::__construct($wsdl, $options);
     }
@@ -41,7 +41,7 @@ class SoapClient extends \SoapClient
      *
      * @return mixed
      */
-    public function __soapCall ($function_name, array $arguments, array $options = null, $input_headers = null, array &$output_headers = null)
+    public function __soapCall($function_name, $arguments, $options = array(), $input_headers = null, &$output_headers = array())
     {
         return parent::__soapCall($function_name, $arguments, $options, $input_headers, $output_headers);
     }
