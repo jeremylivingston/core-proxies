@@ -18,6 +18,19 @@ class SoapClient extends \SoapClient
     }
 
     /**
+     * @link http://php.net/manual/en/soapclient.soapclient.php
+     *
+     * @param mixed $wsdl
+     * @param array $options
+     *
+     * @return \CoreProxies\Proxy\SoapClient
+     */
+    public function SoapClient($wsdl, $options = array())
+    {
+        parent::SoapClient($wsdl, $options);
+    }
+
+    /**
      * @link http://php.net/manual/en/soapclient.call.php
      *
      * @param string $function_name
