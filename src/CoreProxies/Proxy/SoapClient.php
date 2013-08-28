@@ -27,7 +27,7 @@ class SoapClient extends \SoapClient
      */
     public function __call ($function_name, $arguments)
     {
-        return parent::__construct($function_name, $arguments);
+        return parent::__call($function_name, $arguments);
     }
 
     /**
