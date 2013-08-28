@@ -1,0 +1,19 @@
+{
+    "name": "jeremylivingston/core-proxies",
+    "type": "library",
+    "description": "Proxy implementations of core PHP classes",
+    "keywords": ["php"],
+    "homepage": "http://www.github.com/jeremylivingston/core-proxies",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jeremy Livingston"
+        }
+    ],
+    "require": {
+        "php": ">=5.0.5"
+    },
+    "autoload": {
+        "psr-0": { "CoreProxies": "src/" }
+    }
+}
