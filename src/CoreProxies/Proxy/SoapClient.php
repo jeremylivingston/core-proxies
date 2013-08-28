@@ -25,7 +25,7 @@ class SoapClient extends \SoapClient
      *
      * @return mixed
      */
-    public function __call ($function_name, $arguments)
+    public function __call($function_name, $arguments)
     {
         return parent::__call($function_name, $arguments);
     }
@@ -51,7 +51,7 @@ class SoapClient extends \SoapClient
      *
      * @return string The last SOAP request, as an XML string.
      */
-    public function __getLastRequest ()
+    public function __getLastRequest()
     {
         return parent::__getLastRequest();
     }
@@ -61,7 +61,7 @@ class SoapClient extends \SoapClient
      *
      * @return string
      */
-    public function __getLastResponse ()
+    public function __getLastResponse()
     {
         return parent::__getLastResponse();
     }
